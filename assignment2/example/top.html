@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アンケート</title>
+</head>
+
+<body>
+    <img id="top" src="./images/top.jpg" width="100%">
+    <main>
+        <section>
+            <form action="./thankyou.html">
+                <h1 style="color:red">プログラミング講座の受講後アンケート</h1>
+                <article>
+                    <h2>ユーザ情報</h2>
+                    <label for="pet-select">ユーザ名:</label><br>
+                    <input style="width: 300px;" type="text" placeholder="ユーザ名を入力してください">
+                </article>
+                <article>
+                    <h2>受講した講座について</h2>
+                    <label for="pet-select">言語を選択:</label><br>
+                    <select name="pets" id="pet-select"></br>
+                        <option value="">--言語を選択してください--</option>
+                        <option value="html">HTML</option>
+                        <option value="css3">CSS3</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="python">Python</option>
+                        <option value="java">Java</option>
+                    </select>
+                    <div>
+                        <label for="start">受講日:</label>
+                    </div>
+                    <input type="date" id="start" name="trip-start" value="2022-01-01" min="2022-01-01"
+                        max="2022-01-31">
+                </article>
+                <article>
+                    <h2>講座の理解度チェック</h2>
+                    <fieldset>
+                        <legend>どの位理解しましたか？</legend>
+                        <div>
+                            <input type="radio" id="rikai1" name="rikai" value="1">
+                            <label for="rikai1">理解した</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="rikai2" name="rikai" value="2" checked="checked">
+                            <label for="rikai2">まぁまぁ</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="rikai3" name="rikai" value="3">
+                            <label for="rikai3">全然</label>
+                        </div>
+                    </fieldset>
+                </article>
+                <article>
+                    <h2>あなたがこの講座を知った場所は？</h2>
+                    <div>
+                        <input type="checkbox" id="java" name="java" value="1">
+                        <label for="web">WEB</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="python" name="python" value="2" checked="checked">
+                        <label for="tv">TV</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="javascript" name="javascript" value="3">
+                        <label for="youtube">YouTube</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="css" name="css" value="3">
+                        <label for="mail">メール</label>
+                    </div>
+                </article>
+
+                <article>
+                    <h2>その他</h2>
+                    <textarea id="story" name="story" rows="5" cols="33">何かご意見がありましたら、ご記入ください</textarea>
+                </article>
+                <p><input type="submit" value="送信する"></p>
+                <input type="reset" value="取消する">
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
